@@ -57,7 +57,7 @@ const Section = () => {
                 </h3>
               }
               footer={
-                <button className="footer flex items-center justify-center gap-2 bg-green-100 text-green-800 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full hover:bg-green-200 transition-colors w-full sm:w-auto text-sm sm:text-base">
+                <button className="footer flex items-center justify-center gap-2 bg-transparent text-red-800 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full hover:bg-green-200 transition-colors w-full sm:w-auto text-3xl sm:text-base">
                   {card.category}
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 

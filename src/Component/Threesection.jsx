@@ -1,27 +1,36 @@
 import React from 'react';
 import Pass from './Pass';
-import study from '../assets/study.jpg';
+import student from '../assets/study.jpg';
 
-const Secondsection = () => {
+const Threesection = () => {
   return (
-    <div className="bg-white py-12 px-4 sm:px-6 lg:px-8">
+    <div className="bg-gray-200 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        {/* Text Content Section */}
-        <div className="order-2 lg:order-1">
+        {/* Image Section - Now comes first in both mobile and desktop */}
+        <div className="order-1"> {/* Removed lg:order-2 */}
+          <img 
+            src={student}
+            alt="Student learning beyond classroom" 
+            className="w-full h-auto rounded-xl shadow-xl object-cover max-h-[500px]"
+          />
+        </div>
+
+        {/* Content Section */}
+        <div className="order-2"> {/* Removed lg:order-1 */}
           <Pass 
             header={
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-                Single Account for all Essential Educational Tools
+                Power learning beyond the classroom
               </h2>
             } 
             page={
               <p className="text-lg text-gray-600 mb-8 max-w-2xl leading-relaxed">
-                A single account is all you need to access and connect your data to your preferred educational apps and resources.
+                Clique Cloud empowers learners to study from anywhere and instructors to deliver lessons seamlessly from any location, taking education beyond the classroom.
               </p>
             } 
             button={
               <button className="bg-red-600 hover:bg-green-700 text-white font-medium py-3 px-8 rounded-lg transition-colors duration-300 inline-flex items-center shadow-md hover:shadow-lg">
-                Create a new account
+                Get a free account
                 <svg 
                   xmlns="http://www.w3.org/2000/svg" 
                   className="h-5 w-5 ml-2" 
@@ -38,18 +47,9 @@ const Secondsection = () => {
             } 
           />
         </div>
-
-        {/* Image Section */}
-        <div className="order-1 lg:order-2">
-          <img 
-            src={study} 
-            alt="Student using educational tools" 
-            className="w-full h-auto rounded-xl shadow-xl object-cover max-h-[500px]"
-          />
-        </div>
       </div>
     </div>
   );
 };
 
-export default Secondsection;
+export default Threesection;

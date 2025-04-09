@@ -6,17 +6,19 @@ import Navbar from './Component/Navbar'
 import Hero from './Component/Hero'
 import Section from './Component/Section'
 import Secondsection from './Component/Secondsection'
+import Threesection from './Component/Threesection'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div className="pt-20"> {/* Matches navbar height */}
       <Navbar />
       <Hero />
       <Section />
       <Secondsection />
-    </>
+      <Threesection />
+    </div>
   )
 }
 

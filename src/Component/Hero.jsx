@@ -41,7 +41,7 @@ const Hero = () => {
           <div className="space-y-4 w-full">
   {/* Main Student Login Button - Green (full width) */}
   <div className="w-full">
-    <button className="w-full bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-medium transition duration-300 shadow-md flex items-center justify-between">
+    <button className="w-full bg-red-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-medium transition duration-300 shadow-md flex items-center justify-between">
       <span>Login as a student</span>
       <img 
         src={entericon} 
@@ -57,20 +57,20 @@ const Hero = () => {
   {/* Secondary Buttons Container */}
   <div className="grid grid-cols-2 gap-4 w-full">
     {/* For School Button - Red */}
-    <button className="bg-red-600 hover:bg-red-700 text-white px-4 py-3 rounded-lg font-medium shadow-sm transition duration-300 flex items-center justify-between">
-      <span>For school</span>
-      <img 
-        src={entericon} 
-        alt="Enter icon" 
-        className="h-4 w-4 ml-2 filter brightness-0 invert transition-transform hover:translate-x-1"
-        onError={(e) => {
-          e.target.style.display = 'none';
-        }}
-      />
-    </button>
+    <button className="bg-transparent hover:bg-gray-100 text-black px-4 py-3 rounded-lg font-medium shadow-sm transition duration-300 flex items-center justify-between border border-gray-300">
+  <span>For school</span>
+  <img 
+    src={entericon} 
+    alt="Enter icon" 
+    className="h-4 w-4 ml-2 transition-transform hover:translate-x-1"
+    onError={(e) => {
+      e.target.style.display = 'none';
+    }}
+  />
+</button>
     
     {/* Application Partner Button - Blue */}
-    <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-lg font-medium shadow-sm transition duration-300 flex items-center justify-between">
+    <button className="bg-transparent hover:bg-gray-100 text-black px-4 py-3 rounded-lg font-medium shadow-sm transition duration-300 flex items-center justify-between">
       <span>For Application Partner</span>
       <img 
         src={entericon} 
