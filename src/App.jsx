@@ -7,6 +7,7 @@ import Hero from './Component/Hero'
 import Section from './Component/Section'
 import Secondsection from './Component/Secondsection'
 import Threesection from './Component/Threesection'
+import Footer from './Component/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +19,7 @@ function App() {
       <Section />
       <Secondsection />
       <Threesection />
+      <Footer />
     </div>
   )
 }
